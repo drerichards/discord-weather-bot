@@ -6,7 +6,7 @@ const clientReadyHandler = async (client) => {
   console.log(`Logged in as: ${client.user.tag}`);
 
   try {
-    console.log(`Commands refreshed: ${client.commands.size}`);
+    console.log(`Commands uploaded: ${client.commands.size}`);
 
     const data = await rest.put(
       Routes.applicationGuildCommands(
@@ -20,7 +20,7 @@ const clientReadyHandler = async (client) => {
       },
     );
 
-    console.log(`Commands reloaded: ${data.length}`);
+    console.log(`Commands upload confirmed: ${data.length}`);
   } catch (error) {
     console.error(error);
   }
