@@ -26,7 +26,7 @@ const fetchForecast = async (location) => {
           maxTemp_C: forecastDay.day.maxtemp_c,
           minTemp_F: forecastDay.day.mintemp_f,
           maxTemp_F: forecastDay.day.maxtemp_f,
-          condition: forecastDay.day.condition
+          condition: forecastDay.day.condition,
         };
       });
 
